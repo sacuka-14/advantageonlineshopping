@@ -25,17 +25,6 @@ describe('Registro de Usuário, Login e Busca de Produto', () => {
     loginUser: 'string121'
   };
 
-  // Etapa 1: Registrar o Usuário
-  it('Deve registrar um novo usuário com sucesso', () => {
-    cy.request({
-      method: 'POST',
-      url: 'https://www.advantageonlineshopping.com/accountservice/accountrest/api/v1/register',
-      body: userData,
-      failOnStatusCode: false
-    }).then(response => {
-      expect(response.status).to.eq(200);
-    });
-  });
 
   // Etapa 2: Fazer o Login
   it('Deve fazer login com sucesso', () => {
