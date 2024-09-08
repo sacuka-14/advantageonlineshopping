@@ -48,12 +48,12 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados:
 ## Estrutura do Projeto
 
 - **`cypress/fixtures/`**: Contém arquivos de fixture (dados estáticos para testes, se necessário).
-- **`cypress/integration/`**: Contém os arquivos de teste. 
-  - **`product_search.spec.js`**: Testes para a busca de produtos.
-  - **`product_update.spec.js`**: Testes para a atualização de imagens de produtos.
-- **`cypress/pages/`**: Contém os arquivos de Page Object para organizar o código de interação com a interface.
-  - **`loginPage.js`**: Page Object para a página de login.
-  - **`productPage.js`**: Page Object para as páginas de produtos.
+- **`cypress/e2e/`**: Contém os arquivos de teste. 
+  - **`api_atualizar_imagem_produto.cy.js`**: Testes para a atualização de imagens de produtos.
+  - **`api_buscar_produto.cy.js`**: Testes para a busca de produtos na API.
+    **`web_buscar_produto.cy.js`**: Testes para Testes para a busca de produtos.
+- **`cypress/fixtures/`**:
+  - **`test01.json`**: Contem a descrição dos testes em BDD.
 - **`cypress/support/`**: Contém comandos personalizados e configurações do Cypress.
 
 ## Contribuição
