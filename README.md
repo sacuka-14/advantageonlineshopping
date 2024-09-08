@@ -25,22 +25,6 @@ Antes de começar, certifique-se de ter os seguintes requisitos instalados:
    ```bash
    npm install
    ```
-
-## Configuração
-
-1. **Configuração dos Testes**
-
-   Atualize as seguintes informações nos arquivos de teste conforme necessário:
-
-   - **`cypress/pages/loginPage.js`**: Insira o nome de usuário e senha corretos para o login.
-   - **`cypress/pages/productPage.js`**:
-     - Atualize `userId`, `source`, e `color` com os valores apropriados.
-     - Atualize `imageFilePath` com o caminho correto para a imagem que será utilizada no teste.
-
-2. **Configuração do Cypress**
-
-   Não há configurações adicionais necessárias além das dependências instaladas. O Cypress é configurado para funcionar com a estrutura padrão.
-
 ## Execução dos Testes
 
 1. **Executar os Testes no Modo Headless**
