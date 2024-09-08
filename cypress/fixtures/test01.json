@@ -1,0 +1,59 @@
+{
+    "feature": "Buscar e comprar produtos no Advantage Online Shopping",
+    "background": [
+      {
+        "given": "o usuário está na página inicial do Advantage Online Shopping"
+      }
+    ],
+    "scenarios": [
+      {
+        "name": "Realizar a busca de um produto",
+        "steps": [
+          {
+            "when": "o usuário procurar por \"laptop\""
+          },
+          {
+            "then": "os resultados de busca devem exibir produtos relacionados a \"laptop\""
+          }
+        ]
+      },
+      {
+        "name": "Incluir produto no carrinho",
+        "steps": [
+          {
+            "given": "o usuário buscou por \"laptop\""
+          },
+          {
+            "when": "o usuário clicar no primeiro produto exibido"
+          },
+          {
+            "and": "o usuário clicar em \"Adicionar ao carrinho\""
+          },
+          {
+            "then": "o produto deve ser adicionado ao carrinho com sucesso"
+          }
+        ]
+      },
+      {
+        "name": "Validar os produtos incluídos no carrinho na tela de pagamento",
+        "steps": [
+          {
+            "given": "o usuário adicionou um \"laptop\" ao carrinho"
+          },
+          {
+            "when": "o usuário acessar a página do carrinho"
+          },
+          {
+            "then": "o carrinho deve exibir o produto \"laptop\" adicionado"
+          },
+          {
+            "and": "o valor total deve ser corretamente calculado"
+          },
+          {
+            "and": "o botão de \"Finalizar compra\" deve estar habilitado"
+          }
+        ]
+      }
+    ]
+  }
+  
