@@ -24,3 +24,4 @@ describe('Realizar a busca de um produto no Advantage Online Shopping', () => {
     cy.contains('HP').should('be.visible');  // Verificar se a tela de pagamento tem o nome HP
   });
 });
+
